@@ -52,24 +52,25 @@
 
 <main>
   <div class="hero-container">
+    <div class="background-shape"></div>
     <Hero />
     <div class="creator-cards-container">
-      <div style="top: 10%; left: 5%; transform: rotate(-5deg);">
+      <div style="top: 10%; left: 2%; transform: rotate(-8deg); animation-delay: 0s;">
         <CreatorCard creator={creators[0]} />
       </div>
-      <div style="top: 40%; left: 10%; transform: rotate(3deg);">
+      <div style="top: 40%; left: 8%; transform: rotate(5deg); animation-delay: -1s;">
         <CreatorCard creator={creators[1]} />
       </div>
-      <div style="top: 70%; left: 5%; transform: rotate(-3deg);">
+      <div style="top: 75%; left: 2%; transform: rotate(-5deg); animation-delay: -2s;">
         <CreatorCard creator={creators[2]} />
       </div>
-      <div style="top: 15%; right: 5%; transform: rotate(5deg);">
+      <div style="top: 12%; right: 2%; transform: rotate(7deg); animation-delay: -3s;">
         <CreatorCard creator={creators[3]} />
       </div>
-      <div style="top: 45%; right: 10%; transform: rotate(-2deg);">
+      <div style="top: 42%; right: 8%; transform: rotate(-3deg); animation-delay: -4s;">
         <CreatorCard creator={creators[4]} />
       </div>
-      <div style="top: 75%; right: 5%; transform: rotate(2deg);">
+      <div style="top: 78%; right: 2%; transform: rotate(4deg); animation-delay: -5s;">
         <CreatorCard creator={creators[5]} />
       </div>
     </div>
@@ -79,12 +80,14 @@
 <style>
   main {
     position: relative;
+    overflow: hidden; /* Hide overflowing shapes */
   }
   .hero-container {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 5rem; /* Add some space at the bottom */
+    margin: 2rem auto;
+    padding-bottom: 5rem;
+    z-index: 1;
   }
   .creator-cards-container {
     position: absolute;

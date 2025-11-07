@@ -30,13 +30,32 @@
   .creator-card {
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px var(--shadow-color);
     padding: 1rem;
     display: flex;
     align-items: center;
     max-width: 300px;
     margin: 1rem;
-    position: absolute; /* This will be used for positioning */
+    position: absolute;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .creator-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px var(--shadow-color);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 
   .avatar {
@@ -49,6 +68,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex-shrink: 0;
   }
 
   .avatar img {
@@ -65,7 +85,7 @@
   .info p {
     margin: 0;
     line-height: 1.4;
-    color: #333;
+    color: var(--text-color);
   }
 
   .info strong {

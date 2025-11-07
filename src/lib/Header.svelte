@@ -58,6 +58,11 @@
   nav a {
     text-decoration: none;
     color: #555;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--primary-color);
   }
 
   .actions {
@@ -70,15 +75,26 @@
   }
 
   .search input {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 999px;
     padding: 0.5rem 1rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .search input:focus {
+    outline: none;
+    border-color: var(--accent-color);
   }
 
   .login {
     margin-right: 1rem;
     text-decoration: none;
     color: #555;
+    transition: color 0.2s ease;
+  }
+
+  .login:hover {
+    color: var(--primary-color);
   }
 
   .signup {
@@ -87,5 +103,10 @@
     color: #fff;
     border-radius: 999px;
     text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .signup:hover {
+    background-color: var(--secondary-color);
   }
 </style>
