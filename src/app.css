@@ -2,10 +2,10 @@
 
 :root {
   --background-color: #ffffff;
-  --text-color: #212121;
-  --primary-color: #4A148C; /* Deep Purple */
-  --secondary-color: #6A1B9A; /* Lighter Purple */
-  --accent-color: #FF4081; /* Vibrant Pink/Coral */
+  --text-color: #4F4F4F; /* Softer Grey for body text */
+  --primary-color: #1A1A1A; /* Modern Black for headings */
+  --secondary-color: #C2185B; /* Darker pink for hover */
+  --accent-color: #E91E63; /* Vibrant Pink */
   --border-color: #e0e0e0;
   --shadow-color: rgba(0, 0, 0, 0.08);
 }
