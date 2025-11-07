@@ -1,23 +1,18 @@
 <header>
   <div class="logo">
     <a href="/">
-      <img src="https://storage.googleapis.com/cursos-images/2/1/Nav-logo.svg" alt="Logo" />
-      <span>Buy me a coffee</span>
+      <span>Lleida.me</span>
     </a>
   </div>
   <nav>
     <ul>
-      <li><a href="/faq">FAQ</a></li>
-      <li><a href="/wall-of-love">Wall of ♡</a></li>
-      <li><a href="/resources">Resources</a></li>
+      <li><a href="#events">Eventos</a></li>
+      <li><a href="#how-it-works">Cómo funciona</a></li>
     </ul>
   </nav>
   <div class="actions">
-    <div class="search">
-      <input type="text" placeholder="Search creators" />
-    </div>
-    <a href="/login" class="login">Log in</a>
-    <a href="/signup" class="signup">Sign up</a>
+    <a href="/login" class="login">Iniciar Sesión</a>
+    <a href="/signup" class="signup">Registrarse</a>
   </div>
 </header>
 
@@ -28,7 +23,7 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid var(--border-color, #eaeaea);
   }
 
   .logo a {
@@ -37,11 +32,7 @@
     text-decoration: none;
     color: #000;
     font-weight: bold;
-  }
-
-  .logo img {
-    height: 2rem;
-    margin-right: 0.5rem;
+    font-size: 1.5rem;
   }
 
   nav ul {
@@ -59,6 +50,7 @@
     text-decoration: none;
     color: #555;
     transition: color 0.2s ease;
+    font-weight: 500;
   }
 
   nav a:hover {
@@ -70,27 +62,12 @@
     align-items: center;
   }
 
-  .search {
-    margin-right: 1rem;
-  }
-
-  .search input {
-    border: 1px solid var(--border-color);
-    border-radius: 999px;
-    padding: 0.5rem 1rem;
-    transition: border-color 0.2s ease;
-  }
-
-  .search input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-  }
-
   .login {
     margin-right: 1rem;
     text-decoration: none;
     color: #555;
     transition: color 0.2s ease;
+    font-weight: 500;
   }
 
   .login:hover {
@@ -98,12 +75,13 @@
   }
 
   .signup {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: var(--accent-color);
     color: #fff;
     border-radius: 999px;
     text-decoration: none;
     transition: background-color 0.2s ease;
+    font-weight: 500;
   }
 
   .signup:hover {

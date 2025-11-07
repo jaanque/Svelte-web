@@ -1,45 +1,33 @@
 <section class="hero">
-  <div class="loved-by">
-    <span>★★★★★</span> Loved by 1,000,000+ creators
-  </div>
-  <h1>Fund your creative work</h1>
-  <p>Accept support. Start a membership. Setup a shop. It's easier than you think.</p>
-  <a href="/start" class="cta-button">Start my page</a>
-  <p class="free-text">It's free and takes less than a minute!</p>
+  <h1>Diviértete en Lleida y Gana Recompensas</h1>
+  <p>
+    Asiste a los mejores eventos, interactúa con anuncios y obtén entradas gratis. Apoya la
+    cultura local mientras disfrutas.
+  </p>
+  <a href="/signup" class="cta-button">¡Únete ahora!</a>
 </section>
 
 <style>
   .hero {
     text-align: center;
-    padding: 5rem 2rem;
-    max-width: 800px;
+    padding: 6rem 2rem;
+    max-width: 900px;
     margin: 0 auto;
   }
 
-  .loved-by {
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-
-  .loved-by span {
-    color: #2ecc71;
-    vertical-align: middle;
-  }
-
   h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.2;
+    color: var(--primary-color);
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     margin: 1.5rem auto 0;
-    max-width: 600px;
+    max-width: 700px;
     line-height: 1.6;
   }
 
@@ -59,11 +47,5 @@
   .cta-button:hover {
     transform: translateY(-3px);
     background-color: var(--secondary-color);
-  }
-
-  .free-text {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 1rem;
   }
 </style>

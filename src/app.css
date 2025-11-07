@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 :root {
   --background-color: #ffffff;
-  --text-color: #333333;
-  --primary-color: #8B4513; /* Saddle Brown */
-  --secondary-color: #A0522D; /* Sienna */
-  --accent-color: #CD853F; /* Peru */
-  --light-accent-color: #DEB887; /* Burlywood */
+  --text-color: #212121;
+  --primary-color: #4A148C; /* Deep Purple */
+  --secondary-color: #6A1B9A; /* Lighter Purple */
+  --accent-color: #FF4081; /* Vibrant Pink/Coral */
   --border-color: #e0e0e0;
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.08);
 }
 
 *, *::before, *::after {
@@ -23,4 +22,8 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
